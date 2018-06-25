@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p>Form value: {{ loginForm.value | json }}</p>
+      <p>Form status: {{ loginForm.status | json }}</p>
+      <div *ngIf="afAuth.authState | async; let user; else showLogin">
+        <h1>Hello {{ user.displayName }}!</h1>
+        <button (click)="logout()">Logout</button>
+      </div>
+      <h1>登入</h1>
+      <form [formGroup]="loginForm" (ngSubmit)="emaillogin()">
+        <div class="form-group">
+          <label for="email">信箱:</label>
+          <input type="email" class="form-control" id="email" formControlName="email" required> 
+        </div>
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+          <div *ngIf="email.errors.required">
+            email is required.
+          </div>
+          <div *ngIf="email.errors.email">
+            email must be email.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pwd">密碼:</label>
+          <input type="password" class="form-control" id="pwd" formControlName="pwd" minlength="6" maxlength="32" required>
+        </div>
+        <div *ngIf="pwd.invalid && (pwd.dirty || pwd.touched)" class="alert alert-danger">
+            <div *ngIf="pwd.errors.required">
+              password is required.
+            </div>
+            <div *ngIf="pwd.errors.minlength">
+              password must be at least 6 characters long.
+            </div>
+            <div *ngIf="pwd.errors.maxlength">
+              password must be at most 32 characters long.
+            </div>
+          </div>
+        <button type="submit" class="btn btn-outline-dark btn-block">登入</button>
+        <button routerLink="/signup" routerLinkActive="active" class="btn btn-outline-info btn-block">註冊</button>
+        <button (click)="googlelogin()" class="btn btn-outline-success btn-block">Google登入</button>
+      </form>
+    </div>
+  </div>
+</div>
