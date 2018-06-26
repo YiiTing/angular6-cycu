@@ -1,3 +1,35 @@
+1.Environment version on windows
+	1.1 install nodejs(https://nodejs.org/en/) && node -v = 10.4.0
+	1.2 npm i npm@latest -g && npm -v = 6.1.0
+	1.3 npm install -g @angular/cli && ng -v = 6.0.8
+2.Download && install
+	2.1 git clone https://github.com/YiiTing/angular6-cycu.git angular6
+	2.2 cd angular6
+	2.3 npm install
+	2.4 GO to Firebase Console, login with your Google Account, then click on Add Project.
+		&& Choose Database in the left (list of Firebase features) -> Tab RULES, then change .read and .write values to true:
+		 "rules": {
+			".read": true,
+			".write": true
+		  }
+		&& Click on Add Firebase to your Web App, a Popup will be shown:
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+			apiKey: "xxxxxxxxxxxxxxxxxxxx",
+			authDomain: "xxxxxxxxxxxxxxxxxxxx",
+			databaseURL: "xxxxxxxxxxxxxxxxxxxx",
+			projectId: "xxxxxxxxxxxxxxxxxxxx",
+			storageBucket: "xxxxxxxxxxxxxxxxxxxx",
+			messagingSenderId: "xxxxxxxxxxxxxxxxxxxx"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		&& copy 
+		&& paste to /src/environments/environment.ts
+	2.5 ng serve --o
+		
 # Angular6Cycu
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.

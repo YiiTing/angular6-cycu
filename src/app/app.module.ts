@@ -7,11 +7,11 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 
-import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
+import { SweetAlert2Module } from '@toverux/ngx-sweetalert2'; // Swal import from Sweetalert2
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule  } from '@angular/forms'; // <--- JavaScript import from Angular
+import { ReactiveFormsModule  } from '@angular/forms'; // JavaScript import from Angular
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 
@@ -23,7 +23,7 @@ import { SignupComponent } from './signup/signup.component';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule , // <--- import into the NgModule
+    ReactiveFormsModule , // import into the NgModule
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase), // init
     AngularFireDatabaseModule, // add realtime DB module
