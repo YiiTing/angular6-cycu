@@ -2,6 +2,7 @@
 > 	1. install nodejs(https://nodejs.org/en/) && node -v = 10.4.0
 > 	2. npm i npm@latest -g && npm -v = 6.1.0
 > 	3. npm install -g @angular/cli && ng -v = 6.0.8
+>
 #Download && install
 > 	1. git clone https://github.com/YiiTing/angular6-cycu.git angular6
 > 	2. cd angular6
