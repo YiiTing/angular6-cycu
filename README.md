@@ -1,12 +1,12 @@
 #1.Environment version on windows
-	> 1.1 install nodejs(https://nodejs.org/en/) && node -v = 10.4.0
-	> 1.2 npm i npm@latest -g && npm -v = 6.1.0
-	> 1.3 npm install -g @angular/cli && ng -v = 6.0.8
+> 	1.1 install nodejs(https://nodejs.org/en/) && node -v = 10.4.0
+> 	1.2 npm i npm@latest -g && npm -v = 6.1.0
+> 	1.3 npm install -g @angular/cli && ng -v = 6.0.8
 #2.Download && install
-	> 2.1 git clone https://github.com/YiiTing/angular6-cycu.git angular6
-	> 2.2 cd angular6
-	> 2.3 npm install
-	> 2.4 GO to Firebase Console, login with your Google Account, then click on Add Project.
+> 	2.1 git clone https://github.com/YiiTing/angular6-cycu.git angular6
+> 	2.2 cd angular6
+> 	2.3 npm install
+> 	2.4 GO to Firebase Console, login with your Google Account, then click on Add Project.
 		> && Choose Database in the left (list of Firebase features) -> Tab RULES, then change .read and .write values to true:
 		 > "rules": {
 		 > 	".read": true,
@@ -28,7 +28,7 @@
 		></script>
 		>&& copy 
 		>&& paste to /src/environments/environment.ts
-	>2.5 ng serve --o
+>	2.5 ng serve --o
 		
 # Angular6Cycu
 
