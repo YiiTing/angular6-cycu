@@ -8,8 +8,11 @@
 > 	2. cd angular6
 > 	3. npm install
 > 	4. GO to Firebase Console, login with your Google Account, then click on Add Project.
+>
 >		&& Choose Database in the left (list of Firebase features) -> Tab RULES, then change .read and .write values to true:
+>
 >		&& Click on Add Firebase to your Web App, a Popup will be shown:
+>
 >		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
 >		<script>
 >		 // Initialize Firebase
@@ -23,8 +26,11 @@
 >		 };
 >		 firebase.initializeApp(config);
 >		</script>
+>
 >		&& copy 
+>
 >		&& paste to /src/environments/environment.ts
+>
 >	5. ng serve --o
 		
 # Angular6Cycu
